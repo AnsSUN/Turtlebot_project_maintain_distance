@@ -1,0 +1,61 @@
+From ROS:
+
+image_width: 640
+image_height: 480
+camera_name: camera
+camera_matrix:
+rows:3
+cols: 3
+data: [322.0704122808738, 	0, 	199.2680620421962, 
+	0, 		320.86739861544, 	155.2533082600705, 
+	0, 			0, 		1]
+
+distortion_model: plumb_bob
+distortion_coefficients:
+rows: 1
+cols: 5
+data: [0.1639958233797625, -0.271840030972792, 0.001055841660100477, -0.00166555973740089, 0]
+
+rectification_matrix:
+rows: 3 
+cols: 3
+data; [1, 0, 0, 
+	0, 1, 0, 
+	0, 0, 1]
+
+projection_matrix:
+rows: 3 
+cols: 4
+data: [329.2483825683594, 	0, 	198.4101510452074, 	0, 
+	0, 		329.1044006347656, 155.5057121208347, 	0, 
+	0, 		0, 			1, 		0]
+
+
+From Matlab calibration:
+
+use 23rd  no. rotation matrix to get the world coordinates which is:.
+[x,
+ -y]  
+
+
+Therefore, rotation matrix:
+
+col: 3
+rows: 3
+data: [      0.9991   -0.0061    0.0423
+    0.0040    0.9987    0.0507
+   -0.0425   -0.0505    0.9978]
+
+ the actual world coordinates are: 
+[y,
+ z]
+Therefore, the mapping of matlab output to the actual world is:
+[y, = [x,
+z]     -y]
+
+try to get last value i.e. x coordinate of the real world through
+different sensor or do some estimation calculations to get it.
+Similarly, for translation vectors:
+
+[14.6270152877568	-42.7098397511075	365.952159941607]
+
