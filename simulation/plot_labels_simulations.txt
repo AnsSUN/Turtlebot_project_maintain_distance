@@ -1,0 +1,35 @@
+Time (s)
+
+relative distance between lead and ego vehicle (m)
+
+velocity (m/s)
+
+Simulation results with kalman filter, relative distance measured by sensor, safe distance = 0.4m, PI controller, Kp = 0.5, Ki = 0.01
+
+
+Simulation results with sensor fused noise, PI controlled MPC, relative distance measured by sensor, safe distance = 0.4m, Kp = 0.26, Ki = 0.001
+
+velocity (m/s)
+
+Simulation results with kalman filter, velocity of lead and ego vehicle, Kp = 0.26, Ki = 0.001
+
+Simulation results with sensor fused noise, PI controlled MPC, velocity of lead and ego vehicle, PI controller, Kp = 0.7813, Ki = 0.0153
+
+step_velocity_PI_Kp_pt12_Ki_pt0035_kalman_distance_measure.png
+
+step_velocity_PI_Kp_pt12_Ki_pt0035_kalman_velocity_compare.png
+
+
+Simulation results relative distance measured by sensor, safe distance = 0.4m,  MPC controller
+
+Simulation results velocity of lead and ego vehicle, MPC controller
+
+no_noise_nokalman_velocity_compare.png
+
+no_noise_nokalman_distance_measure.png
+
+
+
+
+len = length(lead_bot_vel_vari);
+timebpt = 0:0.4:((len-1)*0.4);
