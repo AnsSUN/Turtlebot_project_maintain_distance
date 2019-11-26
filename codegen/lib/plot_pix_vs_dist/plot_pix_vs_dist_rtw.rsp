@@ -1,0 +1,6 @@
+plot_pix_vs_dist.obj
+plot_pix_vs_dist_initialize.obj
+plot_pix_vs_dist_terminate.obj
+rtGetInf.obj
+rtGetNaN.obj
+rt_nonfinite.obj
