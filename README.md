@@ -14,7 +14,7 @@ Hardware and Software Setup:
 
 5.) After training and generating the bounding box, please make sure the image size transmission is 410X308 pixels. This can be changed in the roslaunch file provided in the ROS camera package.  
 
-Application of turtlebots
+How to apply on turtlebot
 --------------
 
 1.) After finishing up all the above steps, initialize the ROS environment by 'rosinit' command in the Matlab command window. This will initialize the Master PC to exchange the data between the robot and the PC. After this, run the main file: 'acc_turtle_operate_test.m'.
